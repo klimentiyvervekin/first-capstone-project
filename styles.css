@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "HarryPotter";
+  src: url("fonts/HARRYP_.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "HarryPotter", Arial, "Noto Sans", sans-serif;
+  line-height: 1.35;
+}

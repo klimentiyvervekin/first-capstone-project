@@ -1,0 +1,48 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  position: relative;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 34px;
+}
+
+.tags {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 16px 10px;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card details {
+  margin-top: 12px;
+  margin-bottom: 14px;
+}
+
+.card__bookmark-img {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 18px;
+  height: 24px;
+  object-fit: cover;
+  pointer-events: none;
+}
+

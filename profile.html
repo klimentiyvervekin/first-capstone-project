@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="components/header.css" />
+    <link rel="stylesheet" href="components/navigation.css" />
+    <link rel="stylesheet" href="components/button.css" />
+    <link rel="stylesheet" href="components/card.css" />
+    <link rel="stylesheet" href="components/profile.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__title">Welcome to the Harry Potter Quiz App</div>
+        </div>
+      </header>
+
+      <!-- profile section start -->
+      <main class="main">
+        <article class="card card--profile">
+          <img
+            src="assets/profile-photo.png"
+            alt=""
+            class="main__profile-foto"
+            aria-hidden="true"
+          />
+          <div class="card__body">
+            <h2 class="card__title card__title--profile">Klim Vervekin</h2>
+            <h3 class="card__subtitle">About Me</h3>
+            <p class="card__meta">description</p>
+            <button class="button card__button">⁉️ 8</button>
+            <button class="button card__button">🔖 12</button>
+            <h3 class="card__subtitle">Dark mode</h3>
+            <button class="button card__button">Toggle Dark/Light</button>
+          </div>
+        </article>
+        <!-- profile section end -->
+
+        <!-- Navigation Section start -->
+        <nav class="nav">
+          <section class="nav__inner">
+            <a href="index.html" class="nav__link" aria-current="page">Home</a>
+            <a href="bookmarks.html" class="nav__link" aria-current="page"
+              >Bookmarks</a
+            >
+            <a href="profile.html" class="nav__link" aria-current="page"
+              >Profile</a
+            >
+          </section>
+        </nav>
+        <!-- Navigation Section end -->
+      </main>
+    </div>
+  </body>
+</html>
