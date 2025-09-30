@@ -46,3 +46,7 @@
 .nav a:focus {
   text-decoration: none;
 }
+
+.nav__link.active {
+  color: var(--primary);
+}
