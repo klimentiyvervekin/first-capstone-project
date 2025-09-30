@@ -8,13 +8,14 @@
 .header__inner{
   max-width: 720px;
   margin: 0 auto;
-  padding: 26px;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .header__title{
-  font-size: 24px;
+  font-family: "HarryPotter", Arial, "Noto Sans", sans-serif;
+  font-size: 45px;
   line-height: 1.2;
   font-weight: 800;
   letter-spacing: .5px;

@@ -1,3 +1,4 @@
+
 .card--profile {
   display: flex;
   gap: 16px;
@@ -44,11 +45,6 @@
   box-shadow: var(--shadow);
   font-weight: 700;
   cursor: pointer;
-}
-
-.card--profile .profile__actions {
-  display: flex;
-  gap: 8px;
 }
 
 .button.button.card__button:hover {
