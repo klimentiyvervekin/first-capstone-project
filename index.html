@@ -24,18 +24,17 @@
     <!-- first question -->
     <main class="main">
       <article class="card">
-        <img src="assets/bookmark_unreaded.png" alt="" class="card__bookmark-img" aria-hidden="true">
+        <img src="./assets/bookmark_unreaded.png" alt="" class="card__bookmark-img" aria-hidden="true" data-js="bookmarkImg">
 
         <p class="card__question">What is the name of Harry Potter’s pet owl??</p>
 
-        <button quiz-button class="button card__button">Hedwig</button>
-        <button quiz-button class="button card__button">Crookshanks</button>
-        <button quiz-button class="button card__button">Scabbers</button>
+        <button quiz-button class="button card__button" data-js="answersBtn">Hedwig</button>
+        <button quiz-button class="button card__button" data-js="answersBtn">Crookshanks</button>
+        <button quiz-button class="button card__button" data-js="answersBtn">Scabbers</button>
 
-          <details>
-            <summary class="button card__button">Answer</summary>
-            <p class="card__answer">Hedwig</p>
-          </details>
+          <!-- show answer button -->
+          <button type="button" class="button card__button" data-js="show-answerBtn">Show Answer:</button>
+            <p class="card__answer hidden" data-js="answerBtn">Hedwig</p>
 
           <!-- Tags Section -->
           <section class="tags">
@@ -47,7 +46,7 @@
 
           <!-- second question -->
       <article class="card">
-        <img src="assets/bookmark_unreaded.png" alt="" class="card__bookmark-img" aria-hidden="true">
+        <img src="./assets/bookmark_unreaded.png" alt="" class="card__bookmark-img" aria-hidden="true" data-js="bookmarkImg">
 
           <p class="card__question">What position does Harry play on his Quidditch team?</p>
           
@@ -55,26 +54,90 @@
         <button quiz-button class="card__button">Beater</button>
         <button quiz-button class="card__button">Seeker</button>
 
-            <details>
-              <summary class="button card__button">Answer</summary>
-              <p class="card__answer">Seeker</p>
-            </details>
+          <!-- show answer button -->
+          <button type="button" class="button card__button" data-js="show-answerBtn">Show Answer:</button>
+            <p class="card__answer hidden" data-js="answerBtn">Seeker</p>
+
 
             <!-- Tags Section -->
             <section class="tags">
               <span class="tag">#harrypotter</span>
               <span class="tag">#quiz</span>
               <span class="tag">#quidditch</span>
+            </section>
       </article>
+
+      <!-- third question -->
+<article class="card">
+  <img src="./assets/bookmark_unreaded.png" alt="" class="card__bookmark-img" aria-hidden="true" data-js="bookmarkImg">
+
+  <p class="card__question">Who is the Half-Blood Prince?</p>
+
+  <button quiz-button class="button card__button">Harry Potter</button>
+  <button quiz-button class="button card__button">Severus Snape</button>
+  <button quiz-button class="button card__button">Draco Malfoy</button>
+
+  <button type="button" class="button card__button" data-js="show-answerBtn">Show Answer:</button>
+  <p class="card__answer hidden" data-js="answerBtn">Severus Snape</p>
+
+  <section class="tags">
+    <span class="tag">#harrypotter</span>
+    <span class="tag">#quiz</span>
+    <span class="tag">#prince</span>
+  </section>
+</article>
+
+<!-- fourth question -->
+<article class="card">
+  <img src="./assets/bookmark_unreaded.png" alt="" class="card__bookmark-img" aria-hidden="true" data-js="bookmarkImg">
+
+  <p class="card__question">What is the name of the Weasleys' house?</p>
+
+  <button quiz-button class="button card__button">The Burrow</button>
+  <button quiz-button class="button card__button">Grimmauld Place</button>
+  <button quiz-button class="button card__button">Hogsmeade Cottage</button>
+
+  <button type="button" class="button card__button" data-js="show-answerBtn">Show Answer:</button>
+  <p class="card__answer hidden" data-js="answerBtn">The Burrow</p>
+
+  <section class="tags">
+    <span class="tag">#weasley</span>
+    <span class="tag">#quiz</span>
+    <span class="tag">#burrow</span>
+  </section>
+</article>
+
+<!-- fifth question -->
+<article class="card">
+  <img src="./assets/bookmark_unreaded.png" alt="" class="card__bookmark-img" aria-hidden="true" data-js="bookmarkImg">
+
+  <p class="card__question">Which house did Luna Lovegood belong to?</p>
+
+  <button quiz-button class="button card__button">Gryffindor</button>
+  <button quiz-button class="button card__button">Ravenclaw</button>
+  <button quiz-button class="button card__button">Hufflepuff</button>
+
+  <button type="button" class="button card__button" data-js="show-answerBtn">Show Answer:</button>
+  <p class="card__answer hidden" data-js="answerBtn">Ravenclaw</p>
+
+  <section class="tags">
+    <span class="tag">#lunalovegood</span>
+    <span class="tag">#quiz</span>
+    <span class="tag">#ravenclaw</span>
+  </section>
+</article>
 
       <nav class="nav">
         <section class="nav__inner">
           <a href="index.html" class="active nav__link">Home</a>
           <a href="bookmarks.html" class="nav__link">Bookmarks</a>
+          <a href="form.html" class="nav__link active" aria-current="page">Add</a>
           <a href="profile.html" class="nav__link">Profile</a>
         </section>
       </nav>
     </main>
   </div>
+  <script src="index.js"></script>
+<script src="./cards.js"></script>
 </body>
 </html>

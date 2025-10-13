@@ -44,5 +44,12 @@
   height: 24px;
   object-fit: cover;
   pointer-events: none;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 1000;
 }
 
+.card__bookmark:active {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}

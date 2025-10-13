@@ -1,0 +1,15 @@
+.card--form {
+  background: var(--card);
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

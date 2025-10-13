@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Question</title>
+
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="components/header.css" />
+    <link rel="stylesheet" href="components/navigation.css" />
+    <link rel="stylesheet" href="components/button.css" />
+    <link rel="stylesheet" href="components/card.css" />
+    <link rel="stylesheet" href="components/profile.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__title">Add a New Quiz Card</div>
+        </div>
+      </header>
+
+      <main class="main">
+        <!-- form of creation a card -->
+
+        <!-- question -->
+        <article class="card card--form">
+        <form class="form" data-js="questionForm" novalidate>
+          <div class="form__group">
+          <label for="question" class="form__label">Your question:</label>
+          <textarea
+            id="question"
+            class="form__textarea"
+            data-js="question"
+            maxlength="150"
+            required
+            placeholder="Type your question here..."
+            aria-describedby="qCounter"
+          ></textarea>
+          <small id="qCounter" data-js="qCounter"></small>
+          </div>
+ 
+          <!-- answer -->
+          <div class="form__group">
+          <label for="answer" class="form__label">Your answer:</label>
+          <textarea
+            id="answer"
+            class="form__textarea"
+            data-js="answer"
+            maxlength="150"
+            required
+            placeholder="Type the answer here..."
+            aria-describedby="aCounter"
+          ></textarea>
+          <small id="aCounter" data-js="aCounter"></small>
+          </div>
+
+          <!-- tags row -->
+
+          <!-- tag 1 -->
+          <div class="form__row form__row--3">
+          <div class="form__group">
+          <label for="tag1" class="form__label">Tag 1 :</label>
+          <input
+            id="tag1"
+            type="text"
+            class="form__input"
+            data-js="tag1"
+            required
+            placeholder="#tag"
+          />
+          </div>
+
+           <!-- tag 2 -->
+          <div class="form__group">
+          <label for="tag2" class="form__label">Tag 2 :</label>
+          <input
+            id="tag2"
+            type="text"
+            class="form__input"
+            data-js="tag2"
+            required
+            placeholder="#tag"
+          />
+          </div>
+
+          <!-- tag 3 -->
+          <div class="form__group">
+          <label for="tag3" class="form__label">Tag 3 :</label>
+          <input
+            id="tag3"
+            type="text"
+            class="form__input"
+            data-js="tag3"
+            required
+            placeholder="#tag"
+          />
+          </div>
+          </div>
+
+          <!-- 3 answer options -->
+          <div class="form__row form__row--3">
+          <div class="form__group">
+          <label for="opt1" class="form__label">Answer option 1:</label>
+          <input
+            id="opt1"
+            type="text"
+            class="form__input"
+            data-js="opt1"
+            required
+            placeholder="First option"
+          />
+          </div>
+
+          <div class="form__group">
+          <label for="opt2" class="form__label">Answer option 2:</label>
+          <input
+            id="opt2"
+            type="text"
+            class="form__input"
+            data-js="opt2"
+            required
+            placeholder="Second option"
+          />
+          </div>
+
+          <div class="form__group">
+          <label for="opt3" class="form__label">Answer option 3:</label>
+          <input
+            id="opt3"
+            type="text"
+            class="form__input"
+            data-js="opt3"
+            required
+            placeholder="Third option"
+          />
+          </div>
+          </div>
+
+          <!-- submit button -->
+          <button type="submit" class="button card__button">Submit</button>
+        </form>
+        </article>
+
+        <!-- here section of add new cards -->
+        <section class="new-cards" data-js="newCards"></section>
+      </main>
+
+      <!-- nav -->
+      <nav class="nav">
+        <section class="nav__inner">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="bookmarks.html" class="nav__link">Bookmarks</a>
+          <a href="form.html" class="nav__link active" aria-current="page"
+            >Add</a
+          >
+          <a href="profile.html" class="nav__link">Profile</a>
+        </section>
+      </nav>
+    </div>
+
+    <!-- JS -->
+    <script src="./form.js"></script>
+  </body>
+</html>

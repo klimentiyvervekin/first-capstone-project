@@ -55,3 +55,9 @@
   box-shadow: var(--shadow);
   border-radius: 15px;
 }
+
+.button.button.card__button {
+  color: var(--primary);
+  border-radius: 15px;
+  transition: all 0.2s ease;
+}

@@ -1,14 +1,17 @@
 *,
 *::before,
-*::after { box-sizing: border-box; }
+*::after {
+  box-sizing: border-box;
+}
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-:root{
+:root {
   --bg: #f6f7fb;
   --card: #ffffff;
   --text: #121417;
@@ -18,12 +21,11 @@ html, body {
   --brand: #111827;
   --tag-bg: #e5e7eb;
   --tag-text: #111827;
-  --shadow: 0 2px 20px rgba(0,0,0,.06);
+  --shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
   --radius: 16px;
 }
 
-
-body{
+body {
   font-family: "HarryPotter", Arial, "Noto Sans", sans-serif;
   font-size: 30px;
   background: var(--bg);
@@ -39,8 +41,7 @@ body{
 
 .main {
   padding: 26px;
-  padding-bottom: 88px;
+  padding-bottom: 120px;
   max-width: 720px;
   margin-inline: auto;
 }
-

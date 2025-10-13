@@ -12,3 +12,7 @@
   font-family: "HarryPotter", Arial, "Noto Sans", sans-serif;
   font-size: 30px;
 }
+
+.hidden {
+  display: none;
+}
